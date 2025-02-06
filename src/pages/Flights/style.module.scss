@@ -1,0 +1,86 @@
+@import '/src/styles/_breakpoints.scss';
+
+.flights {
+    :global {
+        .cover {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            h1 {
+                font-size: 3.5rem;
+                font-weight: 400;
+            }
+            
+        }
+        .MuiPaper-root {
+            position: relative;
+            padding: 1rem 1.5rem 2.5rem 1.5rem;
+            border-radius: 10px;
+            .trip_type, .flight_class {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                .MuiButton-root {
+                    padding: 5px 10px;
+                    border-radius: 5px 5px 0 0;
+                    
+                }
+                
+            }
+            .inputs_group {
+                @include sm-screen {
+                    display: block;
+                }
+            }
+            .passengers_counter {
+                .MuiButton-root {
+                    padding: 5px 10px;
+                    border-radius: 5px 5px 0 0;
+                }
+                
+            }
+            .location_inputs {
+                .MuiIconButton-root {
+                    z-index: 1;
+                    transition: all 0.1s linear;
+                    
+                }
+            }
+            .explore_button {
+                position: absolute;
+                left: 50%;
+                bottom: -20px;
+                transform: translateX(-50%);
+                border-radius: 50px;
+            }
+        }
+        .MuiContainer-root {
+            @include sm-screen {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        .flight_itinerary {
+            
+            .airline_logo {
+                width: 70px;
+                @include sm-screen {
+                    width: 40px;
+                }
+            }
+            .mobile_hide {
+                @include xs-screen {
+                    display: none;
+                }
+            }
+        }
+
+
+       
+    }
+}

@@ -1,0 +1,15 @@
+@import '/src/styles/_breakpoints.scss';
+
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    :global {
+        .web_navbar {
+            @include sm-screen {
+                display: none;
+            }
+        }
+        
+    }
+}

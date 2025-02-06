@@ -3,7 +3,7 @@ import { useColorScheme, Button, IconButton, Tooltip, Paper, Box, Avatar, useThe
 import { blue } from '@mui/material/colors';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import Sidebar from "@components/Sidebar";
+import Sidebar from "@components/Layout/Sidebar";
 import googleLogo from "@assets/images/google_logo.svg";
 import { list1 } from "../Sidebar/navList";
 import classes from "./style.module.scss";
@@ -37,7 +37,7 @@ export default function Header() {
 
     return (
         <header className={classes.header}>
-            <Paper elevation={1} square sx={{ p: 2, display: 'flex', alignItems: 'center', gap: 5 }}>
+            <Paper elevation={1} square sx={{ p: 2, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 5 }}>
                 {/* Left side contains toggle button and logo */}
                 <Box display="flex" alignItems="center" gap={1}>
                     <Sidebar />
@@ -45,7 +45,7 @@ export default function Header() {
                 </Box>
 
                 {/* Center side contains navigation buttons */}
-                <Box display='flex' gap={2} flex={1}>
+                <Box display='flex' gap={2} flex={1} className="web_navbar">
                     {list1.map((item, index) => (
                         <NavButton key={index} text={item.text} Icon={item.icon} to={item.to} />
                     ))}

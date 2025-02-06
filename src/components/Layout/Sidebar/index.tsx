@@ -23,9 +23,9 @@ export default function Sidebar() {
     const renderList = (list: ListItem[]) => {
         return <List>
             {list.map((item, index) => (
-                <NavLink to={item.to} >
+                <NavLink to={item.to} key={index}>
                     {({ isActive }) => (
-                        <ListItem key={index} disablePadding>
+                        <ListItem disablePadding>
                             <ListItemButton sx={{ backgroundColor: isActive ? blue[50] : 'transparent', borderRadius: isActive ? '0 24px 24px 0' : '0' }}>
                                 <ListItemIcon>
                                     <item.icon sx={{ color: isActive ? blue[600] : 'inherit' }} />
