@@ -15,7 +15,7 @@ This project is a clone of the Google Flights application, built using React and
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/google-flights.git
+    git clone https://github.com/Mosaab-Mohamed/google-flights.git
     ```
 
 2. Navigate to the project directory:
@@ -54,10 +54,3 @@ This project is a clone of the Google Flights application, built using React and
 - `src/redux`: Contains Redux setup and slices
 - [utils](http://_vscodecontentref_/3): Contains utility functions
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
