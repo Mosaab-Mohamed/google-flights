@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <Routes>
       <Route element={<Layout />}>
-        <Route path={urls.flights} element={<Flights />} />
+        <Route path={urls.home} element={<Flights />} />
         <Route path={urls.hotels} element={<Hotels />} />
         <Route path={urls.explore} element={<Explore />} />
         <Route path={urls.rentals} element={<Rentals />} />
